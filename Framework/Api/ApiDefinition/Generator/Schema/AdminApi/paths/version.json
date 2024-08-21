@@ -1,0 +1,34 @@
+{
+    "openapi": "3.0.0",
+    "info": [],
+    "paths": {
+        "\/_info\/version": {
+            "get": {
+                "tags": [
+                    "System Info & Health Check"
+                ],
+                "summary": "Get the Haoke version",
+                "description": "Get the version of the Haoke instance",
+                "operationId": "infoShopwareVersion",
+                "responses": {
+                    "200": {
+                        "description": "Returns the version of the Haoke instance.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "properties": {
+                                        "version": {
+                                            "description": "The Haoke version.",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
